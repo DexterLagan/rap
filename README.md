@@ -31,7 +31,6 @@ http://localhost/index.cgi
 - implement utility functions - in progress;
 - implement OS detection and switching;
 - implement database configuration file parser - in progress;
-- implement 
 - port Newstrap code from newLISP to Racket - in progress;
 - test macro code on 8.2 and 8.2BC for performance eval.;
 - research on routing;
