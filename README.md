@@ -29,14 +29,14 @@ http://localhost/index.cgi
 - implement template display code - DONE;
 - implement utility functions - in progress;
 - implement OS detection and switching;
-- implement database configuration file parser ;
+- implement database configuration file parser - in progress;
 - implement 
 - port Newstrap code from newLISP to Racket - in progress;
 - test macro code on 8.2 and 8.2BC for performance eval.;
 - research on routing;
 - implement forms (https://docs.racket-lang.org/forms/index.html)
 - look into formlets (https://docs.racket-lang.org/web-server/formlets.html)
-- include configuration file library (https://rosettacode.org/wiki/Read_a_configuration_file#Racket, https://rosettacode.org/wiki/Racket/Options);
+- include configuration file library (https://rosettacode.org/wiki/Read_a_configuration_file#Racket, https://rosettacode.org/wiki/Racket/Options) - DONE;
 - implement database connectivity using newstrap as ref. (https://docs.racket-lang.org/db/using-db.html)
 
 ## Customization
