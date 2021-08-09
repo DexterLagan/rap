@@ -28,7 +28,8 @@ http://localhost/index.cgi
 - port Newstrap code from newLISP to Racket - in progress;
 - test macro code;
 - research on routing;
-- 
+- implement forms (https://docs.racket-lang.org/forms/index.html)
+- look into formlets (https://docs.racket-lang.org/web-server/formlets.html)
 
 ## Customization
 
