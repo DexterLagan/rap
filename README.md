@@ -8,6 +8,13 @@ Combination of Racket and Bootstrap, RAP is a Web framework aiming to produce go
 - routing capability
 - good performance if possible
 
+## TODO / Status
+
+- port Newstrap code from newLISP to Racket - in progress;
+- test macro code;
+- research on routing;
+- 
+
 ## Customization
 
 For further customization, see the following pages for sample content:
