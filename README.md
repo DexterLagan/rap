@@ -25,8 +25,11 @@ http://localhost/index.cgi
 
 ## TODO / Status
 
+- implement HTML template page with Boostrap headers - DONE;
+- implement template display code - DONE;
+- implement utility functions - in progress;
 - port Newstrap code from newLISP to Racket - in progress;
-- test macro code;
+- test macro code on 8.2 and 8.2BC for performance eval.;
 - research on routing;
 - implement forms (https://docs.racket-lang.org/forms/index.html)
 - look into formlets (https://docs.racket-lang.org/web-server/formlets.html)
