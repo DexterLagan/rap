@@ -30,6 +30,7 @@ http://localhost/index.cgi
 - research on routing;
 - implement forms (https://docs.racket-lang.org/forms/index.html)
 - look into formlets (https://docs.racket-lang.org/web-server/formlets.html)
+- implement database connectivity using newstrap as ref. (https://docs.racket-lang.org/db/using-db.html)
 
 ## Customization
 
