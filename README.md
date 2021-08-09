@@ -27,6 +27,7 @@ http://localhost/index.cgi
 
 - implement HTML template page with Boostrap headers - DONE;
 - implement template display code - DONE;
+- implement temporary file generation code to enable developer's preview - DONE;
 - implement utility functions - in progress;
 - implement OS detection and switching;
 - implement database configuration file parser - in progress;
