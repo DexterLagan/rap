@@ -33,7 +33,7 @@ http://localhost/index.cgi
 - implement database configuration file parser - in progress;
 - port Newstrap code from newLISP to Racket - in progress;
 - test macro code on 8.2 and 8.2BC for performance eval.;
-- research on routing;
+- research on routing (https://docs.racket-lang.org/routy/index.html is a good start);
 - implement forms (https://docs.racket-lang.org/forms/index.html)
 - look into formlets (https://docs.racket-lang.org/web-server/formlets.html)
 - include configuration file library (https://rosettacode.org/wiki/Read_a_configuration_file#Racket, https://rosettacode.org/wiki/Racket/Options) - DONE;
