@@ -37,7 +37,8 @@ http://localhost/index.cgi
 - implement forms (https://docs.racket-lang.org/forms/index.html)
 - look into formlets (https://docs.racket-lang.org/web-server/formlets.html)
 - include configuration file library (https://rosettacode.org/wiki/Read_a_configuration_file#Racket, https://rosettacode.org/wiki/Racket/Options) - DONE;
-- implement database connectivity using newstrap as ref. (https://docs.racket-lang.org/db/using-db.html)
+- implement database connectivity using newstrap as ref. (https://docs.racket-lang.org/db/using-db.html);
+- look into cookies, sessions, forms, database connections, and static files (see https://www.monolune.com/simple-web-applications-in-racket/).
 
 ## Customization
 
