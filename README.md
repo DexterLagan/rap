@@ -40,6 +40,31 @@ http://localhost/index.cgi
 - implement database connectivity using newstrap as ref. (https://docs.racket-lang.org/db/using-db.html);
 - look into cookies, sessions, forms, database connections, and static files (see https://www.monolune.com/simple-web-applications-in-racket/).
 
+## Configuration
+Here's a sample configuration file:
+<pre>
+# This is a configuration file in standard configuration file format
+#
+# Lines begininning with a hash or a semicolon are ignored by the application
+# program. Blank lines are also ignored by the application program.
+
+# The first word on each non comment line is the configuration option.
+# Remaining words or numbers on the line are configuration parameter
+# data fields.
+
+# Note that configuration option names are not case sensitive. However,
+# configuration parameter data is case sensitive and the lettercase must
+# be preserved.
+
+db-connection-name rap MySQL
+db-username root
+db-password 12345
+db-port 3306
+db-name rap
+
+# EOF
+</pre>
+
 ## Customization
 
 For further customization, see the following pages for sample content:
