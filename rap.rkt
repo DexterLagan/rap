@@ -1,11 +1,17 @@
-#lang racket/base
+#lang racket
+(require "options.rkt")
+(require "system.rkt")
 (require racket/list
          racket/string
          racket/file
-         racket/system)
+         racket/system
+         compatibility/defmacro
+         syntax/parse/define)
+(require (for-template racket/base))
 
 (module+ test
   (require rackunit))
+
 
 ;;; purpose
 
@@ -21,12 +27,15 @@
 ; "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"
 ; "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"
 
+
 ;;; consts
 
 (define *html-template*   "template.html")
 (define *html-tag*        "<!-- page content -->")
+(define *config-filename* "rap.conf")
 
-;;; defs
+
+;;; utility defs
 
 ;; replace html-tag in html-template by content and return the html
 (define (output-html content)
@@ -41,6 +50,9 @@
   (let ((html (string-replace (file->string *html-template*) *html-tag* content)))
     (display-to-file html filename))
   (system*/exit-code "google-chrome" filename))
+; path to Edge for when running on Windows
+; TODO: implement OS detection and switching
+; TODO: implement 
 ; "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --profile-directory=Default
 
 ;; replace each pair of strings in the list l in the source s
@@ -88,14 +100,37 @@
                 "<br>"))
 
 
+;;; system defs
 
+; returns a function that composes parameters in order,
+; using a placeholder _ for passing values between functions.
+(define-syntax (comp_ stx)
+  ; macro to compose functions passing an '_' parameter
+  (syntax-case stx ()
+    ((_ f1 ...)
+     (with-syntax ([x-var (datum->syntax stx '_)])
+       #'(apply compose1 (reverse (list (λ (x-var) f1) ...)))))))
+; unit test
+(module+ test
+  (check-equal? ((comp_ (string-trim _)
+                        (string-downcase _)
+                        (string-replace _ " " "-")
+                        ) "Hello World")
+                "hello-world"))
 
-
-
-
+;; 
 
 
 ;;; main
+
+; read configuration file
+(read-options *config-filename*)
+(define-options
+  db-connection-name
+  db-username
+  db-password
+  db-port
+  db-name)
 
 
 ; EOF
