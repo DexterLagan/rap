@@ -7,17 +7,25 @@
 (module+ test
   (require rackunit))
 
-(provide comp_                     ; (comp_ stx) [MACRO]
+(provide button                    ; (button type title)
+         comp_                     ; (comp_ stx) [MACRO]
          define-append             ; (define-append ... ) [MACRO]
          display-content           ; (display-content content filename)
          dup                       ; (dup str n)
+         dup#                      ; (dup# str n)
+         jumbotron                 ; (jumbotron title content)
+         link                      ; (link title url)
+         link-button               ; (link-button title url)
          make-key-value-html-lines ; (make-key-value-html-lines inactive-item-tag active-item-tag active-item-index open-tag mid-tag close-tag pairs-list)
          map-append                ; (map-append ... ) [MACRO]
          map-append*               ; (map-append* ... ) [MACRO]
          multi-append              ; (multi-append open-tag mid-tag close-tag pairs-list)
          multi-append-list         ; (multi-append-list open-tag mid-tag close-tag pairs-list)
          multi-replace             ; (multi-replace l s)
-         output-html)              ; (output-html content)
+         output-html               ; (output-html content)
+         table                     ; (table headers rows)
+         text-field                ; (text-field title id)
+         thumbnail)                ; (thumbnail image alt)
 
 
 ;;; purpose
