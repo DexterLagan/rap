@@ -25,12 +25,12 @@ http://localhost/index.cgi
 ## Project Status
 
 ### What's done
-- implement HTML template page with Boostrap headers - DONE;
-- implement template display code - DONE;
-- implement temporary file generation code to enable developer's preview - DONE;
-- implement utility functions - DONE;
-- implement database configuration file parser - DONE;
-- port Newstrap code from newLISP to Racket - DONE;
+- implement HTML template page with Boostrap headers;
+- implement template display code;
+- implement temporary file generation code to enable developer's preview;
+- implement utility functions;
+- implement database configuration file parser;
+- port Newstrap code from newLISP to Racket.
 
 ### What's missing
 - implement OS detection and switching;
