@@ -22,15 +22,18 @@ sudo racket rap.rkt
 http://localhost/index.cgi
 </pre>
 
-## TODO / Status
+## Project Status
 
+# What's done
 - implement HTML template page with Boostrap headers - DONE;
 - implement template display code - DONE;
 - implement temporary file generation code to enable developer's preview - DONE;
 - implement utility functions - DONE;
-- implement OS detection and switching;
 - implement database configuration file parser - DONE;
 - port Newstrap code from newLISP to Racket - DONE;
+
+# What's missing
+- implement OS detection and switching;
 - test macro code on 8.2 and 8.2BC for performance eval.;
 - research on routing (https://docs.racket-lang.org/routy/index.html is a good start);
 - implement forms (https://docs.racket-lang.org/forms/index.html)
