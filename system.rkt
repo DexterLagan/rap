@@ -27,6 +27,7 @@
 ; original newLISP code from myself at:
 ; https://github.com/DexterLagan/newstrap/blob/master/newstrap.lsp
 
+
 ;;; consts
 
 (define *html-template*   "template.html")
@@ -177,12 +178,14 @@
                                "<tr><td>row2-column1</td><td>row2-column2</td><td>row2-column1</td></tr>"
                                "<tr><td>row3-column1</td><td>row3-column2</td><td>row3-column1</td></tr>")))
 
+
 ;;; bootstrap grid system
 
 (define-append container    "<div class='container' role='main'>" "</div>")
 (define-append row          "<div class='row'>"                   "</div>")
 (define-append column       "<div class='col-sm'>"                "</div>")
 (define-append horizontal   "<p>"                                   "</p>") ; chaining controls horizontally
+
 
 ;;; visual elements
 
@@ -411,6 +414,7 @@
   (check-equal? (thumbnail "image" "alt")
                 "<img src='image' class='img-thumbnail' alt='alt'>"))
 
+
 ;;; basic HTML visual elements
 
 (define (text-field title id)
@@ -419,6 +423,7 @@
 (module+ test
   (check-equal? (text-field "title" "id")
                 "title<br><input type='text' name='id'>"))
+
 
 
 ; EOF
