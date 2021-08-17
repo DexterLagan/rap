@@ -8,7 +8,6 @@ Combination of Racket and Bootstrap, RAP is a Web framework aiming to produce go
 - routing capability
 - good performance if possible
 
-
 ## How to use
 1) update the database configuration file:
 <pre>
@@ -28,10 +27,10 @@ http://localhost/index.cgi
 - implement HTML template page with Boostrap headers - DONE;
 - implement template display code - DONE;
 - implement temporary file generation code to enable developer's preview - DONE;
-- implement utility functions - in progress;
+- implement utility functions - DONE;
 - implement OS detection and switching;
-- implement database configuration file parser - in progress;
-- port Newstrap code from newLISP to Racket - in progress;
+- implement database configuration file parser - DONE;
+- port Newstrap code from newLISP to Racket - DONE;
 - test macro code on 8.2 and 8.2BC for performance eval.;
 - research on routing (https://docs.racket-lang.org/routy/index.html is a good start);
 - implement forms (https://docs.racket-lang.org/forms/index.html)
