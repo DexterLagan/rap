@@ -30,7 +30,8 @@ http://localhost/index.cgi
 - implement temporary file generation code to enable developer's preview;
 - implement utility functions;
 - implement database configuration file parser;
-- port Newstrap code from newLISP to Racket.
+- port Newstrap code from newLISP to Racket;
+- include configuration file library (https://rosettacode.org/wiki/Racket/Options).
 
 ### What's missing
 - implement OS detection and switching;
@@ -38,7 +39,6 @@ http://localhost/index.cgi
 - research on routing (https://docs.racket-lang.org/routy/index.html is a good start);
 - implement forms (https://docs.racket-lang.org/forms/index.html)
 - look into formlets (https://docs.racket-lang.org/web-server/formlets.html)
-- include configuration file library (https://rosettacode.org/wiki/Read_a_configuration_file#Racket, https://rosettacode.org/wiki/Racket/Options) - DONE;
 - implement database connectivity using newstrap as ref. (https://docs.racket-lang.org/db/using-db.html);
 - look into cookies, sessions, forms, database connections, and static files (see https://www.monolune.com/simple-web-applications-in-racket/).
 
