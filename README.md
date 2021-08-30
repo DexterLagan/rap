@@ -8,18 +8,18 @@ Combination of Racket and Bootstrap, RAP is a Web framework aiming to produce go
 - routing capability
 - good performance if possible
 
-## How to use
+## Proposed configuration steps
 1) update the database configuration file:
 <pre>
-nano db.conf
+vi db.conf
 </pre>
 2) start the server with:
 <pre>
-sudo racket rap.rkt
+/usr/local/bin/rap
 </pre>
 3) point your browser to:
 <pre>
-http://localhost/index.cgi
+http://localhost/index.rkt
 </pre>
 
 ## Project Status
