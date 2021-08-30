@@ -19,7 +19,7 @@ vi db.conf
 </pre>
 3) point your browser to:
 <pre>
-http://localhost/index.rkt
+http://localhost/index.cgi
 </pre>
 
 ## Project Status
